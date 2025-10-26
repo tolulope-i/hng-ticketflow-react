@@ -10,7 +10,6 @@ function LandingPage() {
   return (
     <>
       <Header />
-
       <section className="hero" aria-labelledby="hero-title">
         <div className="ocean-enhanced" aria-hidden="true">
           <div className="enhanced-wave front"></div>

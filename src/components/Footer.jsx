@@ -36,9 +36,6 @@ function Footer() {
                 <Link to=""><FaXTwitter /></Link>
               </li>
               <li>
-                <Link to=""><FaGithub /></Link>
-              </li>
-              <li>
                 <Link to=""><FaFacebookF /></Link>
               </li>
             </ul>

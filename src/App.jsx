@@ -26,6 +26,12 @@ function App() {
 function AppContent() {
   const { user } = useAuth()
 
+  if (!user) {
+    return <Navigate to="/auth/login" />
+  } else {
+    console.log('User logged in:', user.email)
+  }
+
   return (
     <>
       <Routes>

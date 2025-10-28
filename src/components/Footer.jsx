@@ -27,16 +27,16 @@ function Footer() {
           <div className="footer-section socials">
             <ul>
               <li>
-                <Link to=""><FaLinkedinIn /></Link>
+                <Link to="https://www.linkedin.com/in/tolulope-ilesanmi?"><FaLinkedinIn /></Link>
               </li>
               <li>
-                <Link to=""><FaInstagram /></Link>
+                <Link to="https://www.instagram.com/tolu__nimi?igsh=MXN6M29yeXJhN3Z3Ng=="><FaInstagram /></Link>
               </li>
               <li>
-                <Link to=""><FaXTwitter /></Link>
+                <Link to="https://x.com/dev__tolu?t=Y-q7l2pvY5032cfCsZp2mA&s=08"><FaXTwitter /></Link>
               </li>
               <li>
-                <Link to=""><FaFacebookF /></Link>
+                <Link to="https://www.facebook.com/marvelous.ilesanmi.9"><FaFacebookF /></Link>
               </li>
             </ul>
           </div>

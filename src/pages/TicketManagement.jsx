@@ -92,7 +92,7 @@ function TicketManagement() {
         const updatedTickets = [...tickets]
 
         if (editingTicket) {
-            // Update existing ticket
+            // Updating existing ticket
             const index = updatedTickets.findIndex(t => t.id === editingTicket.id)
             if (index !== -1) {
                 updatedTickets[index] = {
@@ -103,7 +103,7 @@ function TicketManagement() {
             }
             addToast('Ticket updated successfully!', 'success')
         } else {
-            // Create new ticket
+            // Creating new ticket
             const newTicket = {
                 id: Date.now(),
                 ...formData,

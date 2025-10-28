@@ -13,7 +13,7 @@ function Dashboard() {
   });
 
   useEffect(() => {
-    // Load tickets from localStorage and calculate stats
+    // Loading tickets from localStorage and calculating stats
     const tickets = JSON.parse(
       localStorage.getItem("ticketapp_tickets") || "[]"
     );

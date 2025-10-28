@@ -36,9 +36,9 @@ function Header() {
             aria-label="Toggle navigation menu"
           >
             {isMenuOpen ? (
-              <span>&#10005; {/* Close icon */}</span>
+              <span>&#10005; </span>
             ) : (
-              <span>&#9776; {/* Hamburger icon */}</span>
+              <span>&#9776; </span>
             )}
           </button>
 

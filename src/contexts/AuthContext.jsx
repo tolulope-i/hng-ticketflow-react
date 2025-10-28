@@ -15,14 +15,14 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Load session and users from localStorage
+    // Loading session and users from localStorage
     const session = localStorage.getItem('ticketapp_session')
     const users = JSON.parse(localStorage.getItem('ticketapp_users') || '[]')
     
     if (session) {
       try {
         const userData = JSON.parse(session)
-        // Verify user still exists in users list
+        // Verifying if user still exists in users list
         const userExists = users.find(u => u.email === userData.email)
         if (userExists) {
           setUser(userData)
@@ -37,7 +37,7 @@ export function AuthProvider({ children }) {
     setLoading(false)
   }, [])
 
-  // Initialize demo users if none exist
+  // Initializing demo users if no user exist
   const initializeDemoUsers = () => {
     const users = JSON.parse(localStorage.getItem('ticketapp_users') || '[]')
     if (users.length === 0) {
@@ -88,14 +88,14 @@ export function AuthProvider({ children }) {
         initializeDemoUsers()
         const users = JSON.parse(localStorage.getItem('ticketapp_users') || '[]')
         
-        // Check if user already exists
+        // Checking if user already exists
         const existingUser = users.find(u => u.email === email)
         if (existingUser) {
           reject(new Error('User with this email already exists'))
           return
         }
 
-        // Validate input
+        // Validating input
         if (!name || !email || !password) {
           reject(new Error('Please fill all fields'))
           return
@@ -111,7 +111,7 @@ export function AuthProvider({ children }) {
           return
         }
 
-        // Create new user
+        // Creating new user
         const newUser = {
           id: Date.now(),
           name,

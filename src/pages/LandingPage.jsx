@@ -47,8 +47,6 @@ function LandingPage() {
             </div>
           </div>
         </div>
-
-        {/* <div className="wave-background" aria-hidden="true"></div> */}
       </section>
 
       <section className="features" aria-labelledby="features-title">

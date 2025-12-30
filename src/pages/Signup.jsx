@@ -90,11 +90,11 @@ function Signup() {
     <>
       <Header />
       
-      <div className="container" style={{ padding: '4rem 1rem' }}>
+      <div className="wrapper" style={{ padding: '2rem 1rem' }}>
         <div style={{ maxWidth: '400px', margin: '0 auto' }}>
           <div className="card">
-            <h1 className="section-title text-center mb-3">Create Account</h1>
-            <p className="text-center mb-4" style={{ color: 'var(--gray-600)' }}>
+            <h1 className="section-title text-center mb-1">Create Account</h1>
+            <p className="text-center mb-2" style={{ color: 'var(--gray-600)' }}>
               Join TicketFlow and streamline your workflow
             </p>
             
@@ -113,7 +113,7 @@ function Signup() {
                 />
                 {errors.name && (
                   <div id="name-error" className="form-error" role="alert">
-                    ⚠️ {errors.name}
+                    {errors.name}
                   </div>
                 )}
               </div>
@@ -132,7 +132,7 @@ function Signup() {
                 />
                 {errors.email && (
                   <div id="email-error" className="form-error" role="alert">
-                    ⚠️ {errors.email}
+                    {errors.email}
                   </div>
                 )}
               </div>
@@ -151,7 +151,7 @@ function Signup() {
                 />
                 {errors.password && (
                   <div id="password-error" className="form-error" role="alert">
-                    ⚠️ {errors.password}
+                    {errors.password}
                   </div>
                 )}
               </div>
@@ -170,14 +170,14 @@ function Signup() {
                 />
                 {errors.confirmPassword && (
                   <div id="confirm-password-error" className="form-error" role="alert">
-                    ⚠️ {errors.confirmPassword}
+                    {errors.confirmPassword}
                   </div>
                 )}
               </div>
 
               {errors.submit && (
                 <div className="form-error mb-3 text-center" role="alert">
-                  ⚠️ {errors.submit}
+                  {errors.submit}
                 </div>
               )}
               

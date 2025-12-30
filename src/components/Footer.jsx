@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -9,7 +9,7 @@ import { FaFacebookF } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="footer" role="contentinfo">
-      <div className="container">
+      <div className="wrapper">
         <div className="footer-content">
           <div className="footer-section socials quick-links">
             <ul>
@@ -27,16 +27,36 @@ function Footer() {
           <div className="footer-section socials">
             <ul>
               <li>
-                <Link to="https://www.linkedin.com/in/tolulope-ilesanmi?" target="_blank"><FaLinkedinIn /></Link>
+                <Link
+                  to="https://www.linkedin.com/in/tolulope-ilesanmi?"
+                  target="_blank"
+                >
+                  <FaLinkedinIn />
+                </Link>
               </li>
               <li>
-                <Link to="https://www.instagram.com/tolu__nimi?igsh=MXN6M29yeXJhN3Z3Ng==" target="_blank"><FaInstagram /></Link>
+                <Link
+                  to="https://www.instagram.com/tolu__nimi?igsh=MXN6M29yeXJhN3Z3Ng=="
+                  target="_blank"
+                >
+                  <FaInstagram />
+                </Link>
               </li>
               <li>
-                <Link to="https://x.com/dev__tolu?t=Y-q7l2pvY5032cfCsZp2mA&s=08" target="_blank"><FaXTwitter /></Link>
+                <Link
+                  to="https://x.com/dev__tolu?t=Y-q7l2pvY5032cfCsZp2mA&s=08"
+                  target="_blank"
+                >
+                  <FaXTwitter />
+                </Link>
               </li>
               <li>
-                <Link to="https://www.facebook.com/marvelous.ilesanmi.9" target="_blank"><FaFacebookF /></Link>
+                <Link
+                  to="https://www.facebook.com/marvelous.ilesanmi.9"
+                  target="_blank"
+                >
+                  <FaFacebookF />
+                </Link>
               </li>
             </ul>
           </div>

@@ -56,7 +56,6 @@ function AppContent() {
         />
         
       </Routes>
-      <Footer/>
       <Toast />
     </>
   )

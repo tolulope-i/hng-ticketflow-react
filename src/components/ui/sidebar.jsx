@@ -142,6 +142,7 @@ function Sidebar({
   if (collapsible === "none") {
     return (
       <div
+      style={{padding: "10px 20px !important"}}
         data-slot="sidebar"
         className={cn(
           "bg-sidebar text-sidebar-foreground flex h-full w-(--sidebar-width) flex-col",

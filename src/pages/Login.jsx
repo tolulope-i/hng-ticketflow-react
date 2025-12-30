@@ -83,11 +83,11 @@ function Login() {
     <>
       <Header />
       
-      <div className="container" style={{ padding: '4rem 1rem' }}>
+      <div className="wrapper" style={{ padding: '2rem 1rem' }}>
         <div style={{ maxWidth: '400px', margin: '0 auto' }}>
           <div className="card">
-            <h1 className="section-title text-center mb-3">Welcome Back</h1>
-            <p className="text-center mb-4" style={{ color: 'var(--gray-600)' }}>
+            <h1 className="section-title text-center mb-1">Welcome Back</h1>
+            <p className="text-center mb-2" style={{ color: 'var(--gray-600)' }}>
               Sign in to your TicketFlow account
             </p>
             
@@ -106,7 +106,7 @@ function Login() {
                 />
                 {errors.email && (
                   <div id="email-error" className="form-error" role="alert">
-                    ⚠️ {errors.email}
+                    {errors.email}
                   </div>
                 )}
               </div>
@@ -125,14 +125,14 @@ function Login() {
                 />
                 {errors.password && (
                   <div id="password-error" className="form-error" role="alert">
-                    ⚠️ {errors.password}
+                   {errors.password}
                   </div>
                 )}
               </div>
 
               {errors.submit && (
                 <div className="form-error mb-3 text-center" role="alert">
-                  ⚠️ {errors.submit}
+                  {errors.submit}
                 </div>
               )}
               

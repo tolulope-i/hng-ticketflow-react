@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="container">
+      <div className="wrapper">
         <nav className="nav" role="navigation">
           <Link to="/" className="logo" aria-label="TicketFlow Home">
             TicketFlow
@@ -62,7 +62,7 @@ function Header() {
                 <li>
                   <button
                     onClick={handleLogout}
-                    className="btn btn-outline btn-sm"
+                    className="btn btn-outline"
                   >
                     Logout
                   </button>
@@ -82,7 +82,7 @@ function Header() {
                 <li>
                   <Link
                     to="/auth/signup"
-                    className="btn btn-primary btn-sm"
+                    className="btn btn-primary"
                     onClick={closeMenu}
                   >
                     Get Started

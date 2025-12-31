@@ -107,7 +107,7 @@ function Dashboard() {
             <div className="quick-actions">
               <div className="card card1">
                 <h2 className="mb-3">Quick Actions</h2>
-                <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}>
                   <Link to="/tickets" className="btn btn-primary">
                     Manage Tickets
                   </Link>

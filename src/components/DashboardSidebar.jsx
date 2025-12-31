@@ -54,10 +54,10 @@ export function DashboardSidebar() {
         <SidebarGroup>
           <SidebarGroupLabel>
             <h2>
-              <span style={{ margin: "30px 0px", fontSize: "30px", fontWeight: "600", color: "#4F46E5" }}>
-                <a href="/">
+              <span style={{ margin: "30px 0px", fontSize: "30px", fontWeight: "600", color: "#7f56d8" }}>
+                <Link to="/">
                   TicketFlow
-                </a>
+                </Link>
               </span>
             </h2>
           </SidebarGroupLabel>
@@ -66,10 +66,10 @@ export function DashboardSidebar() {
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url} style={{ margin: "10px 0px", fontSize: "18px" }}>
+                    <Link to={item.url} style={{ margin: "10px 0px", fontSize: "18px" }}>
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -81,7 +81,6 @@ export function DashboardSidebar() {
         <button
           onClick={handleLogout}
           className="btn btn-outline"
-          style={{ margin: "20px " }}
         >
           Logout
           <LogOut />

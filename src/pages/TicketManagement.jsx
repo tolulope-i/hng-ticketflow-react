@@ -45,13 +45,16 @@ function TicketManagement() {
 
     if (!formData.title.trim()) {
       newErrors.title = "Title is required";
-    }
-    if (formData.title.length < 3) {
+    } else if (formData.title.length < 3) {
       newErrors.title = "Title must be at least 3 characters";
     }
-    if (formData.description.length < 10) {
+
+    if (!formData.description.trim()) {
+      newErrors.description = "Description is required";
+    } else if (formData.description.length < 10) {
       newErrors.description = "Description must be at least 10 characters";
     }
+
     if (!formData.status) {
       newErrors.status = "Status is required";
     } else if (!["open", "in_progress", "closed"].includes(formData.status)) {
@@ -232,16 +235,32 @@ function TicketManagement() {
 
                     <div className="form-group">
                       <label htmlFor="description" className="form-label">
-                        Description
+                        Description *
                       </label>
+
                       <textarea
                         id="description"
                         name="description"
                         value={formData.description}
                         onChange={handleChange}
-                        className="form-textarea"
+                        className={`form-textarea ${
+                          errors.description ? "error" : ""
+                        }`}
                         rows="4"
+                        aria-describedby={
+                          errors.description ? "description-error" : undefined
+                        }
                       />
+
+                      {errors.description && (
+                        <div
+                          id="description-error"
+                          className="form-error"
+                          role="alert"
+                        >
+                          {errors.description}
+                        </div>
+                      )}
                     </div>
 
                     <div

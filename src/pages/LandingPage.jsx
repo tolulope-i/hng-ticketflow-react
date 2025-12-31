@@ -44,23 +44,21 @@ function LandingPage() {
 
               <div className="layout-container">
                 <div className="hero-content">
-                  <p className="hero-pre-title">Now with AI-powered insights</p>
+                  <p className="hero-pre-title">Simple. Reliable. Built for teams</p>
                   <h1 id="hero-title" className="hero-title">
                     Streamline your <span>support with TicketFlow</span>
                   </h1>
                   <p className="hero-description">
-                    A modern, intuitive ticket management system that helps
-                    teams track, prioritize, and resolve issues efficiently.
-                    Beautiful design meets powerful functionality.
+                    A clean and easy-to-use ticket management system that helps teams create, track, update, and resolve support requests efficiently all in one place
                   </p>
                   <div className="hero-actions">
-                    <Link to="/auth/login" className="btn btn-primary">
-                      Login to Dashboard
-                    </Link>
                     <Link to="/auth/signup" className="btn btn-outline">
                       {" "}
                       Get Started Free{" "}
                     </Link>
+                    <a href="#features" className="btn btn-primary">
+                      Learn more
+                    </a>
                   </div>
                 </div>
               </div>
@@ -82,7 +80,7 @@ function LandingPage() {
               How TicketFlow Works
             </h2>
             <p className="section-description">
-              Simplify your support process in three easy steps
+              Handle support requests in a clear, structured workflow, ensuring no confusion, no missed tickets
             </p>
 
             <div className="steps-grid">
@@ -93,8 +91,7 @@ function LandingPage() {
                 </div>
                 <h3 className="step-title">Create Tickets</h3>
                 <p className="step-description">
-                  Easily create and submit support tickets through our
-                  user-friendly interface.
+                  Submit tickets with clear details so issues are properly logged, tracked, and addressed by the right team members.
                 </p>
               </div>
 
@@ -103,10 +100,9 @@ function LandingPage() {
                 <div className="step-icon" aria-hidden="true">
                   <Clock />
                 </div>
-                <h3 className="step-title">Track Progress</h3>
+                <h3 className="step-title">View & Track Tickets</h3>
                 <p className="step-description">
-                  Monitor the status of your tickets in real-time with our
-                  intuitive dashboard.
+                  View all tickets in a centralized dashboard with their current status, priority, and progress at a glance.
                 </p>
               </div>
 
@@ -115,10 +111,9 @@ function LandingPage() {
                 <div className="step-icon" aria-hidden="true">
                   <CircleCheck />
                 </div>
-                <h3 className="step-title">Resolve Issues</h3>
+                <h3 className="step-title">Update & Manage Tickets</h3>
                 <p className="step-description">
-                  Collaborate with your team to efficiently resolve tickets and
-                  improve customer satisfaction.
+                  Update ticket details, fix mistakes, add new information, or make changes as issues evolve.
                 </p>
               </div>
 
@@ -127,23 +122,26 @@ function LandingPage() {
                 <div className="step-icon" aria-hidden="true">
                   <ChartNoAxesCombined />
                 </div>
-                <h3 className="step-title">Analyze Data</h3>
+                <h3 className="step-title">Resolve & Close Tickets</h3>
                 <p className="step-description">
-                  Leverage AI-powered insights to identify trends and optimize
-                  your support process.
+                  Move tickets between Open, In Progress, and Closed states to keep work flowing and nothing forgotten.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="features" aria-labelledby="features-title">
+        <section
+          className="features"
+          id="features"
+          aria-labelledby="features-title"
+        >
           <div className="wrapper">
             <h2 id="features-title" className="section-title">
               Why Choose TicketFlow?
             </h2>
             <p className="section-description">
-              Built with modern web technologies for the best user experience
+              Core features designed to keep your support process simple, clear, and efficient.
             </p>
 
             <div className="features-grid">
@@ -151,10 +149,9 @@ function LandingPage() {
                 <div className="feature-icon" aria-hidden="true">
                   <Zap />
                 </div>
-                <h3 className="feature-title">Lightning Fast</h3>
+                <h3 className="feature-title">Fast & Simple Workflow</h3>
                 <p className="feature-description">
-                  Built with performance in mind. Experience blazing fast ticket
-                  management with instant updates and real-time notifications.
+                  TicketFlow focuses on the essentials, making it easy to create, track, and resolve tickets quickly without unnecessary complexity.
                 </p>
               </div>
 
@@ -162,11 +159,9 @@ function LandingPage() {
                 <div className="feature-icon" aria-hidden="true">
                   <Sparkles />
                 </div>
-                <h3 className="feature-title">Beautiful UI</h3>
+                <h3 className="feature-title">Clean & Intuitive Interface</h3>
                 <p className="feature-description">
-                  Enjoy a clean, modern interface that's both beautiful and
-                  functional. Designed with accessibility and user experience as
-                  top priorities.
+                  A modern, clutter-free interface that makes managing tickets straightforward for both small teams and growing organizations.
                 </p>
               </div>
 
@@ -175,12 +170,9 @@ function LandingPage() {
                   <MonitorSmartphone />
                 </div>
                 <div className="feature-content">
-                  <h3 className="feature-title">Fully Responsive</h3>
+                  <h3 className="feature-title">Status-Based Ticket Management</h3>
                   <p className="feature-description">
-                    Works perfectly on all devices - from desktop to mobile.
-                    Manage your tickets anywhere, anytime with our responsive
-                    design. Our bento grid layout adapts beautifully to every
-                    screen size.
+                    Easily change ticket statuses to track progress, identify pending issues, and ensure nothing slips through the cracks.
                   </p>
                 </div>
               </div>
@@ -192,10 +184,9 @@ function LandingPage() {
           <div className="wrapper">
             <div className="cta">
               <div className="cta-content">
-                <h2 className="cta-title">Ready to Get Started?</h2>
+                <h2 className="cta-title">Ready to organize your support workflow?</h2>
                 <p className="cta-description">
-                  Join thousands of teams using TicketFlow to streamline their
-                  support process.
+                  Start managing tickets with clarity and confidence. No complicated setup just a simple system that works.
                 </p>
                 <div className="cta-features">
                   <ul>
@@ -204,42 +195,35 @@ function LandingPage() {
                       <span>
                         <CircleCheck />
                       </span>{" "}
-                      Easy Ticket Creation
+                      Create, edit, and delete tickets easily
                     </li>
                     <li>
                       {" "}
                       <span>
                         <CircleCheck />
                       </span>{" "}
-                      Real-Time Tracking
+                      Track ticket status in real time
                     </li>
                     <li>
                       {" "}
                       <span>
                         <CircleCheck />
                       </span>{" "}
-                      AI-Powered Insights
+                      Keep all support requests organized
                     </li>
                     <li>
                       {" "}
                       <span>
                         <CircleCheck />
                       </span>{" "}
-                      Collaborative Resolution
+                      Simple and intuitive dashboard
                     </li>
                     <li>
                       {" "}
                       <span>
                         <CircleCheck />
                       </span>{" "}
-                      Responsive Design
-                    </li>
-                    <li>
-                      {" "}
-                      <span>
-                        <CircleCheck />
-                      </span>{" "}
-                      Beautiful Interface
+                      Works seamlessly across devices
                     </li>
                   </ul>
                 </div>

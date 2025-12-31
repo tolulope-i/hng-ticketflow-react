@@ -1275,7 +1275,7 @@ body {
 
   .nav-links {
   position: fixed;
-  top: 64px; /* height of header */
+  top: 52px; /* height of header */
   left: 0;
   width: 100%;
   background: white;

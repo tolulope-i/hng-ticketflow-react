@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="">
+      <div className="wrapper">
         <nav className="nav" role="navigation">
           <Link to="/" className="logo" aria-label="TicketFlow Home">
             TicketFlow

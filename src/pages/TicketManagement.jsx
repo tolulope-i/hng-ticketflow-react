@@ -225,7 +225,7 @@ function TicketManagement() {
                           className="form-error"
                           role="alert"
                         >
-                          ⚠️ {errors.title}
+                          {errors.title}
                         </div>
                       )}
                     </div>
@@ -278,7 +278,7 @@ function TicketManagement() {
                             className="form-error"
                             role="alert"
                           >
-                            ⚠️ {errors.status}
+                            {errors.status}
                           </div>
                         )}
                       </div>
